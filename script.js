@@ -1,15 +1,33 @@
-let num = 266219;
-let numString = num.toString();
-let total = 1;
+let lang = prompt("Введите язык. ru/en")
 
-for (let i = 0; i < numString.length; i++) {
+console.log("Через if");
 
-    total *= Number(numString[i]);
+if (lang == 'ru') {
+    console.log("Недели на русском языке:");
+    console.log("Понедельник,Вторник,Среда,Четверг,Пятница,Суббота,Воскресенье");
+} else if (lang == 'en') {
+    console.log("Weeks in English:");
+    console.log("Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday");
 }
 
-console.log("Приозведение чисел равно: " + total);
+console.log("Через switch");
 
-total = total ** 3
+switch (lang) {
+    case "ru":
+        console.log("Недели на русском языке:");
+        console.log("Понедельник,Вторник,Среда,Четверг,Пятница,Суббота,Воскресенье");
+        break;
+    case "en":
+        console.log("Weeks in English:");
+        console.log("Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday");
+        break;
+    default:
+        break;
+}
 
-console.log("После возведения в степень: " + total);
-console.log(total.toString().substr(0, 2));
+//Через многомерный массив не смог сделать((((
+
+let namePerson = prompt("Введите имя: ");
+let indetificatePerson = (namePerson === "Артем") ? "директор" : (namePerson === "Александр") ? "преподаватель" : "студент";
+
+console.log(indetificatePerson);
