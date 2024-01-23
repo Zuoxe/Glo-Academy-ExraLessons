@@ -1,21 +1,8 @@
-let currentString = prompt("Введите любой текст.");
+let arr = [3546789n, 354678n, 453245667n, 35467890n, 345668798900n, 876543n, 3456576n];
 
-const getCorrectText = function (str) {
-
-    let newString = '';
-
-    if (typeof str === "string") {
-
-        str = str.trim();
-        newString = str.slice(0, 30) + " ...";
-
-        console.log(newString);
-
-    } else {
-
-        return "Переменная не являеться строкой";
+for (let i = 0; i < arr.length; i++) {
+    if (arr[]) {
 
     }
-}
 
-getCorrectText(currentString)
+}
